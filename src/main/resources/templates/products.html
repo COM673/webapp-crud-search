@@ -40,11 +40,13 @@
                     </form>
                 </div>
 
+                <!-- If set (value not null) then show the message from flash -->
                 <div th:if="${message} != null" class="alert alert-success alert-dismissible fade show mb-2">
                     <button type="button" class="close" data-dismiss="alert">&times;</button>
                     <h6 th:text="${message}"></h6>
                 </div>
 
+                <!-- If set (value not null) then show the error from flash -->
                 <div th:if="${error} != null" class="alert alert-danger alert-dismissible fade show mb-2">
                     <button type="button" class="close" data-dismiss="alert">&times;</button>
                     <h6 th:text="${error}"></h6>
